@@ -19,7 +19,7 @@ public class ProductDBC extends JDBCConnection implements ProductDBCInF {
 
     @Override
     public void insert(Product product) {
-        String sql = "INSERT INTO Product(name, price, image, cate_id, des) VALUES (?,?,?,?,?);";
+        String sql = "INSERT INTO product( name, price, image, cate_id, des) VALUES (?,?,?,?,?);";
         Connection con = super.getJDBCConnection();
 
         try {
@@ -29,6 +29,7 @@ public class ProductDBC extends JDBCConnection implements ProductDBCInF {
             ps.setString(3, product.getImage());
             ps.setInt(4, product.getCategory().getId());
             ps.setString(5, product.getDes());
+            //ps.setBinaryStream(6,product.getImgData());
             ps.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();

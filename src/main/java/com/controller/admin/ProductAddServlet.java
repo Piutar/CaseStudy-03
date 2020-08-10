@@ -32,24 +32,33 @@ public class ProductAddServlet extends HttpServlet {
         try {
             List<FileItem> items = servletFileUpload.parseRequest(request);
             for (FileItem item : items) {
-                if (item.getFieldName().equals("name")) {
-                    product.setName(item.getString());
-                } else if (item.getFieldName().equals("category")) {
-                    product.setCategory(categoryService.get(Integer.parseInt(item.getString())));
-                } else if (item.getFieldName().equals("price")) {
-                    product.setPrice(Long.parseLong(item.getString()));
-                } else if (item.getFieldName().equals("des")) {
-                    product.setDes(item.getString());
-                } else if (item.getFieldName().equals("image")) {
-                    final String dir = "/upload";
+                switch (item.getFieldName()){
+                    case "name":
+                        product.setName(item.getString());
+                        break;
+                    case "category":
+                        product.setCategory(categoryService.get(Integer.parseInt(item.getString())));
+                        break;
+                    case "price":
+                        product.setPrice(Long.parseLong(item.getString()));
+                        break;
+                    case "des":
+                        product.setDes(item.getString());
+                        break;
+                    case "image":
+                        String dir = "/upload";
 
-                    String originalFileName = item.getName();
-                    int index = originalFileName.lastIndexOf(".");
-                    String ext = originalFileName.substring(index + 1);
-                    String fileName = System.currentTimeMillis() + "." + ext;
-                    File file = new File(dir + "/" + fileName);
-                    item.write(file);
-                    product.setImage(fileName);
+                        String originalFileName = item.getName();
+                        int index = originalFileName.lastIndexOf(".");
+                        String ext = originalFileName.substring(index + 1);
+                        String fileName = System.currentTimeMillis() + "." + ext;
+                        File file = new File(dir + "/" + fileName);
+                        item.write(file);
+                        product.setImage(fileName);
+
+//                    product.setImage(item.getFieldName());
+//                    product.setImgData(item.getInputStream());
+                        break;
                 }
             }
 

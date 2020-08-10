@@ -13,6 +13,9 @@
   <body>
   <h1>Case Study Module 3:</h1>
   <h2>Web Application: Bán hàng - Quản lý sản phẩm.</h2>
-  ...
+  <%
+    RequestDispatcher dispatcher = request.getRequestDispatcher("/home");
+    dispatcher.forward(request,response);
+  %>
   </body>
 </html>

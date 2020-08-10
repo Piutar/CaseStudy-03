@@ -63,7 +63,7 @@
 			<div class="col-sm-2">
 				<a href="${pageContext.request.contextPath }/home" class="pull-right"><img
 					title="profile image" class="img-circle img-responsive"
-					src="https://lh3.googleusercontent.com/proxy/c6TVdpfgA2VnYnsPiYPKOhT9pqEmkNLstaxYIfjP8cyK1jHL1EF9GtfnQPTg4_reYwDOBYIBseIbB6YMMCNd0zeA8b1V9xFqYloC1mPxBXTiynJQk2CdCuSQyg"></a>
+					src="/view/client/static/img/home.png"></a>
 			</div>
 		</div>
 		<div class="row">

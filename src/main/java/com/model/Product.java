@@ -9,6 +9,7 @@ public class Product implements Serializable {
     private String image;
     private String des;
     private Category category;//cate_id
+    //private InputStream imgData;
 
 
     public Product() {

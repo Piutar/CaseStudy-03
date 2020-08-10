@@ -36,13 +36,13 @@
 	id="style_color">
 <style>
 	#div-1{
-	background-image: url("/view/client/static/img/thumb/05.jpg");
+	background-image: url("/view/client/static/img/thumb/20.jpg");
 	}
 	#div-2{
 		background-image: url("/view/client/static/img/blog/06.jpg");
 	}
 	#div-3{
-		background-image: url("/view/client/static/img/thumb/11.jpg");
+		background-image: url("/view/client/static/img/thumb/18.jpg");
 	}
 </style>
 <!-- CSS Customization -->
@@ -67,7 +67,7 @@
 		<div class="tp-banner-container">
 			<div class="tp-banner">
 				<ul>
-					<%for ( int i = 1; i <= 5; i++) { %>
+					<%for ( int i = 8; i >= 1; i--) { %>
 					<li class="revolution-mch-1" data-transition="fade"
 						data-slotamount="5" data-masterspeed="1000" data-title="Slide 1">
 						<!-- MAIN IMAGE --> <img src="${url}/img/<%=i%>.jpg" alt="darkblurbg"
@@ -349,7 +349,7 @@
 						<h2>Top Rated</h2>
 					</div>
 					<div class="thumb-product">
-						<img class="thumb-product-img" src="${url}/img/thumb/08.jpg"
+						<img class="thumb-product-img" src="${url}/img/thumb/11.jpg"
 							alt="">
 						<div class="thumb-product-in">
 							<h4>
@@ -367,7 +367,7 @@
 						</ul>
 					</div>
 					<div class="thumb-product">
-						<img class="thumb-product-img" src="${url}/img/thumb/09.jpg"
+						<img class="thumb-product-img" src="${url}/img/thumb/12.jpg"
 							alt="">
 						<div class="thumb-product-in">
 							<h4>
@@ -384,7 +384,7 @@
 						</ul>
 					</div>
 					<div class="thumb-product">
-						<img class="thumb-product-img" src="${url}/img/thumb/03.jpg"
+						<img class="thumb-product-img" src="${url}/img/thumb/13.jpg"
 							alt="">
 						<div class="thumb-product-in">
 							<h4>
@@ -406,7 +406,7 @@
 						<h2>Best Sellers</h2>
 					</div>
 					<div class="thumb-product">
-						<img class="thumb-product-img" src="${url}/img/thumb/02.jpg"
+						<img class="thumb-product-img" src="${url}/img/thumb/12.jpg"
 							alt="">
 						<div class="thumb-product-in">
 							<h4>
@@ -423,7 +423,7 @@
 						</ul>
 					</div>
 					<div class="thumb-product">
-						<img class="thumb-product-img" src="${url}/img/thumb/10.jpg"
+						<img class="thumb-product-img" src="${url}/img/thumb/11.jpg"
 							alt="">
 						<div class="thumb-product-in">
 							<h4>
@@ -440,7 +440,7 @@
 						</ul>
 					</div>
 					<div class="thumb-product">
-						<img class="thumb-product-img" src="${url}/img/thumb/06.jpg"
+						<img class="thumb-product-img" src="${url}/img/thumb/16.jpg"
 							alt="">
 						<div class="thumb-product-in">
 							<h4>
@@ -463,7 +463,7 @@
 						<h2>Sale Items</h2>
 					</div>
 					<div class="thumb-product">
-						<img class="thumb-product-img" src="${url}/img/thumb/07.jpg"
+						<img class="thumb-product-img" src="${url}/img/thumb/17.jpg"
 							alt="">
 						<div class="thumb-product-in">
 							<h4>
@@ -481,7 +481,7 @@
 						</ul>
 					</div>
 					<div class="thumb-product">
-						<img class="thumb-product-img" src="${url}/img/thumb/04.jpg"
+						<img class="thumb-product-img" src="${url}/img/thumb/14.jpg"
 							alt="">
 						<div class="thumb-product-in">
 							<h4>
@@ -498,7 +498,7 @@
 						</ul>
 					</div>
 					<div class="thumb-product">
-						<img class="thumb-product-img" src="${url}/img/thumb/05.jpg"
+						<img class="thumb-product-img" src="${url}/img/thumb/15.jpg"
 							alt="">
 						<div class="thumb-product-in">
 							<h4>

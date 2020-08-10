@@ -29,24 +29,29 @@ public class UserAddServlet extends HttpServlet {
         try {
             List<FileItem> items = servletFileUpload.parseRequest(request);
             for (FileItem item : items) {
-                if (item.getFieldName().equals("email")) {
-                    user.setEmail(item.getString());;
-                } else if (item.getFieldName().equals("username")) {
-                    user.setUsername(item.getString());
-                } else if (item.getFieldName().equals("password")) {
-                    user.setPassword(item.getString());
-                } else if (item.getFieldName().equals("role")) {
-                    user.setRoleId(Integer.parseInt(item.getString()));;
-                } else if (item.getFieldName().equals("avatar")) {
-                    final String dir = "/upload";
-                    String originalFileName = item.getName();
-                    int index = originalFileName.lastIndexOf(".");
-                    String ext = originalFileName.substring(index + 1);
-                    String fileName = System.currentTimeMillis() + "." + ext;
-                    File file = new File(dir + "/" + fileName);
-                    item.write(file);
-
-                    user.setAvatar(fileName);
+                switch (item.getFieldName()){
+                    case "username":
+                        user.setUsername(item.getString());
+                        break;
+                    case "password":
+                        user.setPassword(item.getString());
+                        break;
+                    case "email":
+                        user.setEmail(item.getString());
+                        break;
+                    case "role":
+                        user.setRoleId(Integer.parseInt(item.getString()));
+                        break;
+                    case "avatar":
+                        String dir = "/upload";
+                        String originalFileName = item.getName();
+                        int index = originalFileName.lastIndexOf(".");
+                        String ext = originalFileName.substring(index + 1);
+                        String fileName = System.currentTimeMillis() + "." + ext;
+                        File file = new File(dir + "/" + fileName);
+                        item.write(file);
+                        user.setAvatar(fileName);
+                        break;
                 }
             }
 

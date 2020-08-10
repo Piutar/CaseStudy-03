@@ -14,7 +14,7 @@
                         <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" href="${pageContext.request.contextPath }">
-                        <img id="logo-header" src="${url}/img/logo.png" alt="Logo">
+                        <img id="logo-header" src="${url}/img/logo-2.png" alt="Logo">
                     </a>
                 </div>
 
@@ -81,13 +81,13 @@
                                                     <button type="button" class="btn-u btn-u-dark">Read More</button>
                                                 </div>
                                                 <div class="col-md-3 col-sm-4 col-xs-4 md-margin-bottom-30">
-                                                    <a href="#"><img class="product-offers img-responsive" src="${url}/img/blog/01.jpg" alt=""></a>
+                                                    <a href="#"><img class="product-offers img-responsive" src="${url}/img/blog/31.jpg" alt=""></a>
                                                 </div>
                                                 <div class="col-md-3 col-sm-4 col-xs-4 sm-margin-bottom-30">
-                                                    <a href="#"><img class="product-offers img-responsive" src="${url}/img/blog/02.jpg" alt=""></a>
+                                                    <a href="#"><img class="product-offers img-responsive" src="${url}/img/blog/32.jpg" alt=""></a>
                                                 </div>
                                                 <div class="col-md-3 col-sm-4 col-xs-4">
-                                                    <a href="#"><img class="product-offers img-responsive" src="${url}/img/blog/03.jpg" alt=""></a>
+                                                    <a href="#"><img class="product-offers img-responsive" src="${url}/img/blog/33.jpg" alt=""></a>
                                                 </div>
                                             </div><!--/end row-->
                                         </div><!--/end container-->
