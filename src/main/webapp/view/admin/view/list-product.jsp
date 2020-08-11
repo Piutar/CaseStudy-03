@@ -46,7 +46,10 @@
 					<div class="col-md-12">
 						<!-- Advanced Tables -->
 						<div class="panel panel-default">
-							<div class="panel-heading">Advanced Tables</div>
+							<div class="panel-heading"><span>Advanced Tables:</span>
+								<button type="button" value="categoryList">
+									<a href="/admin/category/list">Category</a></button>
+							</div>
 							<div class="panel-body">
 								<div class="table-responsive">
 									<table class="table table-striped table-bordered table-hover"

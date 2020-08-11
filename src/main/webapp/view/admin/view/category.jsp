@@ -14,6 +14,8 @@
 <body>
 <div align="center">
     <h1>CATEGORY LIST</h1>
+    <h3><a href="/home">HOME</a></h3>
+    <h3><a href="/admin">Dashboard</a></h3>
     <form action="/admin/category/add" method="post">
         <table border="1" cellpadding="5">
             <tr>

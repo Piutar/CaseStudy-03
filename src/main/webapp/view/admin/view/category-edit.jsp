@@ -24,7 +24,10 @@
                 <td><input type="text" name="name" value="${category.getName()}" size="45px"></td>
             </tr>
             <tr>
-                <td colspan="2"><button type="submit" value="save">Save</button></td>
+                <td colspan="2">
+                    <button type="submit" value="save">Save</button>
+                    <a href="/admin"><button type="submit" value="save">Dashboard</button></a>
+                </td>
             </tr>
         </table>
     </form>

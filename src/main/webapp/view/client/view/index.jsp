@@ -42,7 +42,7 @@
 		background-image: url("/view/client/static/img/blog/06.jpg");
 	}
 	#div-3{
-		background-image: url("/view/client/static/img/thumb/18.jpg");
+		background-image: url("/view/client/static/img/blog/33.jpg");
 	}
 </style>
 <!-- CSS Customization -->

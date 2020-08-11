@@ -25,7 +25,6 @@ public class LoginServlet extends HttpServlet {
 
         if (username == ""){
             alter = "Username or password cannot be left blank!";
-            System.out.println(alter);
             request.setAttribute("alert", alter);
             request.getRequestDispatcher("/view/client/view/login.jsp").forward(request, response);
             return;
